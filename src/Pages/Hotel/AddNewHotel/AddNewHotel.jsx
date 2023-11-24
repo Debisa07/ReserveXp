@@ -55,7 +55,7 @@ const submitHotel = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await axios.post("http://localhost:4000/hotel", {
+    const response = await axios.post("https://reserve-xp-backend-7oga.vercel.app/hotel", {
       hotelName: hotelName,
       location: location,
       price: price,
