@@ -1,0 +1,15 @@
+.radio-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.radio-label input[type="radio"] {
+  transform: scale(0.8); /* Adjust the scale value to make them smaller */
+  margin-right: 5px; /* Adjust the margin as needed */
+}

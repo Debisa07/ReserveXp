@@ -1,0 +1,132 @@
+
+    /* Styling for the radio cards and the main card */
+.main-card {
+  text-align: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.radio-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card {
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Styling for selected radio cards */
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked+label {
+  border: 2px solid #051036;
+}
+
+/* Styling for the button */
+#createAccount {
+  margin-top: 20px;
+  background-color: #ccc;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: not-allowed;
+}
+
+#createAccount.active {
+  background-color: #051036;
+  color: #fff;
+  cursor: pointer;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Neue Montreal", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+    line-height: 20px;
+    text-align: start;
+    letter-spacing: 0.6px;
+}
+
+.main-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Your existing styles for the cards and main-card */
+
+/* Additional style for shading */
+.card.selected::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background: linear-gradient(rgba(5, 16, 54, 0.5), rgba(255, 255, 255, 0));
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+/* Your existing styles for the cards and main-card */
+
+/* Additional style for shading */
+.card.selected::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px; /* Change the height of the shade as needed */
+    background: linear-gradient(rgba(5, 16, 54, 0.5), rgba(255, 255, 255, 0));
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+/* Your existing styles for the cards and main-card */
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .radio-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Your existing styles for the cards and main-card */
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .radio-cards {
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  /* Add space between cards */
+  .card {
+    margin-bottom: 10px; /* Adjust as needed */
+    margin-top: 30px;
+  }
+
+  /* For the last card, remove margin to avoid extra space at the bottom */
+  .card:last-child {
+    margin-bottom: 0;
+  }
+}
+

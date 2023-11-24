@@ -1,0 +1,73 @@
+.custom-button {
+    background-color: transparent; /* Set the background color to transparent */
+    border: 1px solid #051036; /* Set the border color */
+    padding: 5px 10px; /* Adjust padding to create space inside the button */
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-button i {
+    margin-right: 5px; /* Adjust the margin between the icon and the text */
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #DDE1EF; /* Set the border for the input */
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Additional styles if needed */
+  }
+  
+  .bordered-input,
+.bordered-textarea {
+  border: 1px solid #DDE1EF; /* Set the border for the input and textarea */
+  border-radius: 4px;
+  padding: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  /* Additional styles if needed */
+}
+
+.app {
+    margin: 1rem 4rem;
+  }
+  
+  .app .ql-container {
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background: #fefcfc;
+  }
+  
+  /* Snow Theme */
+  .app .ql-snow.ql-toolbar {
+    display: block;
+    background: #eaecec;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+  
+  /* Bubble Theme */
+  .app .ql-bubble .ql-editor {
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+  }
+  
+  .app .ql-editor {
+    min-height: 18em;
+  }
+  
+  .themeSwitcher {
+    margin-top: 0.5em;
+    font-size: small;
+  }
+
+  
